@@ -240,3 +240,26 @@ screenshot*.png
 generated_*.py
 temp/
 tmp/
+# ===== СЕКРЕТЫ =====
+config.json
+credentials/
+*.key
+*.pem
+tokens.json
+google_tokens.json
+
+# ===== ДАННЫЕ =====
+data/
+logs/
+uploads/
+outputs/
+repos/
+
+# ===== МОДЕЛИ =====
+vosk-model*/
+
+# ===== ВРЕМЕННОЕ =====
+screenshot*.png
+generated_*.py
+temp/
+tmp/
