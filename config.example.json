@@ -1,0 +1,93 @@
+{
+  "user_name": "Пользователь",
+  "language": "ru",
+  "theme": "dark",
+
+  "ai": {
+    "default_provider": "auto",
+    "providers": {
+      "openrouter": {
+        "api_key": "ВСТАВЬ_КЛЮЧ_OPENROUTER",
+        "model": "openrouter/auto"
+      },
+      "deepseek": {
+        "api_key": "ВСТАВЬ_КЛЮЧ_DEEPSEEK",
+        "model": "deepseek-chat"
+      },
+      "gemini": {
+        "api_key": "ВСТАВЬ_КЛЮЧ_GEMINI",
+        "model": "gemini-2.0-flash"
+      },
+      "groq": {
+        "api_key": "ВСТАВЬ_КЛЮЧ_GROQ",
+        "model": "llama3-8b-8192"
+      },
+      "mistral": {
+        "api_key": "ВСТАВЬ_КЛЮЧ_MISTRAL",
+        "model": "mistral-small-latest"
+      }
+    }
+  },
+
+  "google": {
+    "client_id": "ВСТАВЬ_CLIENT_ID",
+    "client_secret": "ВСТАВЬ_CLIENT_SECRET",
+    "redirect_uri": "http://localhost:8080/callback/google"
+  },
+
+  "github": {
+    "token": "ВСТАВЬ_ТОКЕН_GITHUB",
+    "username": "BitStopSU"
+  },
+
+  "discord": {
+    "token": "ВСТАВЬ_ТОКЕН_DISCORD",
+    "guild_id": ""
+  },
+
+  "telegram": {
+    "bot_token": "ВСТАВЬ_ТОКЕН_TELEGRAM",
+    "chat_id": ""
+  },
+
+  "vk": {
+    "access_token": "ВСТАВЬ_ТОКЕН_VK"
+  },
+
+  "yandex": {
+    "client_id": "ВСТАВЬ_CLIENT_ID",
+    "client_secret": "ВСТАВЬ_CLIENT_SECRET"
+  },
+
+  "steam": {
+    "api_key": "ВСТАВЬ_КЛЮЧ_STEAM",
+    "steam_id": ""
+  },
+
+  "voice": {
+    "enabled": false,
+    "wake_word": "джарвис",
+    "model_path": "vosk-model-small-ru-0.22"
+  },
+
+  "server": {
+    "host": "0.0.0.0",
+    "port": 5001,
+    "test_port": 5002
+  },
+
+  "paths": {
+    "uploads": "uploads",
+    "outputs": "outputs",
+    "data": "data",
+    "logs": "logs"
+  },
+
+  "features": {
+    "voice": true,
+    "discord_bot": true,
+    "telegram_bot": false,
+    "web_interface": true,
+    "autonomous": true
+  }
+}
