@@ -1,0 +1,170 @@
+{
+    "user_name": "BitStop",
+    "language": "ru",
+    "theme": "dark",
+
+    "ai": {
+        "default_provider": "auto",
+        "fallback_enabled": true,
+        "providers": {
+            "openrouter": {
+                "api_key": "",
+                "model": "openrouter/auto"
+            },
+            "deepseek": {
+                "api_key": "",
+                "model": "deepseek-chat"
+            },
+            "gemini": {
+                "api_key": "",
+                "model": "gemini-2.0-flash"
+            },
+            "groq": {
+                "api_key": "",
+                "model": "llama3-8b-8192"
+            },
+            "mistral": {
+                "api_key": "",
+                "model": "mistral-small-latest"
+            },
+            "openai": {
+                "api_key": "",
+                "model": "gpt-4o-mini"
+            },
+            "claude": {
+                "api_key": "",
+                "model": "claude-3-haiku-20240307"
+            }
+        }
+    },
+
+    "google": {
+        "client_id": "",
+        "client_secret": "",
+        "redirect_uri": "http://localhost:8080/callback/google"
+    },
+
+    "google_tokens": {
+        "access_token": "",
+        "refresh_token": "",
+        "expires_at": ""
+    },
+
+    "github": {
+        "token": "",
+        "username": "BitStopSU"
+    },
+
+    "discord": {
+        "token": "",
+        "server_url": "http://localhost:5001"
+    },
+
+    "telegram": {
+        "bot_token": "",
+        "chat_id": ""
+    },
+
+    "vk": {
+        "access_token": ""
+    },
+
+    "yandex": {
+        "client_id": "",
+        "client_secret": "",
+        "access_token": ""
+    },
+
+    "steam": {
+        "api_key": "",
+        "steam_id": ""
+    },
+
+    "voice": {
+        "enabled": true,
+        "wake_word": "джарвис",
+        "model_path": "vosk-model-small-ru-0.22",
+        "rate": 175,
+        "volume": 1.0,
+        "microphone_device": 1
+    },
+
+    "server": {
+        "host": "0.0.0.0",
+        "port": 5001,
+        "web_port": 3000,
+        "debug": false
+    },
+
+    "paths": {
+        "uploads": "data/uploads",
+        "outputs": "data/outputs",
+        "files": "data/files",
+        "logs": "logs",
+        "data": "data"
+    },
+
+    "features": {
+        "voice": true,
+        "discord_bot": true,
+        "telegram_bot": false,
+        "web_interface": true,
+        "autonomous": true,
+        "self_reflection": true,
+        "learning": true,
+        "backups": true
+    },
+
+    "permissions": {
+        "require_for": {
+            "delete_file": true,
+            "install_package": true,
+            "update_jarvis": true,
+            "system_settings": true,
+            "access_passwords": true,
+            "paid_ai": true,
+            "send_data": true,
+            "change_code": true,
+            "control_pc": true
+        },
+        "auto_allow": {
+            "read_file": true,
+            "search_internet": true,
+            "free_ai": true,
+            "screenshot": true,
+            "backups": true,
+            "logs": true,
+            "monitoring": true
+        }
+    },
+
+    "limits": {
+        "max_file_size_mb": 2000,
+        "max_files_per_user": 10000,
+        "daily_ai_requests": 1000,
+        "daily_paid_ai_cost_usd": 10.0,
+        "history_days": 30
+    },
+
+    "backup": {
+        "enabled": true,
+        "interval_hours": 24,
+        "targets": ["telegram", "gdrive", "local"],
+        "encrypt": true
+    },
+
+    "notifications": {
+        "telegram": false,
+        "discord": true,
+        "email": false,
+        "sound": true,
+        "level": "important"
+    },
+
+    "logging": {
+        "level": "INFO",
+        "save_to_file": true,
+        "max_size_mb": 100,
+        "rotate_days": 7
+    }
+}
